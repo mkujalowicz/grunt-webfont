@@ -16,6 +16,12 @@ f.design_size = 16
 f.em = args['fontHeight']
 f.descent = args['descent']
 f.ascent = args['fontHeight'] - args['descent']
+f.os2_typolinegap = 0
+f.hhea_ascent_add = 0
+f.hhea_ascent = f.ascent
+f.hhea_descent_add = 0
+f.hhea_descent = 0
+f.hhea_linegap = 0
 if args['normalize']:
 	f.autoWidth(0, 0, args['fontHeight'])
 
